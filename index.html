@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Help Party</title>
+    <!-- Background:#2d325o e #424769 px horizontal py vertical pe end ps start-->
+  </head>
+  <body class="p-0 m-0 bg-[#2d3250] text-white">
+    <header class="w-full bg-[#424769]">
+      <div class="mx-0 flex justify-between items-center mr-25">
+        <div class="side-left">
+          <figure class="w-">
+            <img src="./img/logo.png" alt="Logo" class="logo w-35" />
+          </figure>
+        </div>
+
+        <div class="search">
+          <form role="search">
+            <input
+              type="text"
+              id="pesquisa" 
+              name="q"
+              placeholder="Buscar.."
+              class="bg-white text-black rounded-lg pe-15 ps-4 py-[2px] text-left w-100"
+            />
+          </form>
+        </div>
+        
+        <div class="side-right">
+          <figure class="">
+            <img
+              src="./img/profile.png"
+              alt="profile menu"
+              class="profile w-10 h-auto"
+            />
+          </figure>
+        </div>
+      </div>
+
+      <section class="nav w-full flex justify-center mx-0">
+        <ul class="flex gap-10">
+          <li>Home</li>
+          <li>Planilha</li>
+          <li>Roteiro</li>
+          <li>Dicas</li>
+          <li>Sobre nós</li>
+
+        </ul>
+      </section>
+    </header>
+
+    <aside class="filter flex bg-[#424769] w-60 h-100 mt-5 rounded-lg p-5 inline-block" >
+      <form >
+        <h1 class="text-xl mb-3">Filtro</h1>
+        <div class="option flex flex-col gap-2">
+        <div>
+          <input type="radio" id="doces" name="doces" value="doces" class=""/>
+          <label for="doces">Doce</label>
+        </div>
+        <div>
+          <input type="radio" id="bebidas" name="bebidas" value="bebidas" />
+          <label for="bebidas">Bebida</label>
+        </div>
+        <div>
+          <input type="radio" id="buffet" name="buffet" value="buffet" />
+          <label for="buffet">Buffet</label>
+        </div>
+        <div>
+          <input type="radio" id="decoracao" name="decoracao" value="decoracao"/>
+          <label for="decoracao">Decoração</label>
+        </div>
+        <div>
+          <input type="radio" id="traje" name="traje" value="traje"/>
+          <label for="traje">Traje</label>
+        </div>
+        <div>
+          <input type="radio" id="acessorio" name="acessorio" value="acessorio"/>
+          <label for="acessorio">Acessrio</label>
+        </div>
+        <div>
+          <input type="radio" id="lembrancacas" name="lembrancacas" value="lembrancacas"/>
+          <label for="lembrancacas">Lembranças</label>
+        </div>
+        <div>
+          <input type="radio" id="musica" name="musica" value="musica"/>
+          <label for="musica">Música</label>
+        </div>
+        <div>
+          <input type="radio" id="regiao" name="regiao" value="regiao"/>
+          <label for="regiao">Região</label>
+        </div>
+
+        </div>
+
+      </form>
+    </aside>
+  </body>
+</html>
