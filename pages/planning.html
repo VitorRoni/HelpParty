@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Help Party</title>
+    <!-- Background:#2d325o e #424769 px horizontal py vertical pe end ps start-->
+  </head>
+  <body class="p-0 m-0 bg-[#2d3250] text-white">
+    <header class="w-full bg-[#424769]">
+      <div class="mx-0 flex justify-between items-center">
+        <div class="side-left pl-3">
+          <figure>
+            <img src="../img/logo.png" alt="Logo" class="logo w-35" />
+          </figure>
+        </div>
+
+        <div class="search flex justify-center pr-15">
+          <form role="search">
+            <input
+              type="text"
+              id="pesquisa"
+              name="q"
+              placeholder="Buscar.."
+              class="bg-white text-black rounded-lg pe-15 ps-4 py-[2px] text-left w-100"
+            />
+          </form>
+        </div>
+
+        <div class="side-right pr-15">
+          <figure class="">
+            <img
+              src="../img/profile.png"
+              alt="profile menu"
+              class="profile w-10 h-auto"
+            />
+          </figure>
+        </div>
+      </div>
+      <nav class="nav w-full flex justify-center mx-0">
+        <section class="">
+          <ul class="flex gap-10">
+            <li>Home</li>
+            <li>Planejamentos</li>
+            <li>Dicas</li>
+            <li>Sobre nós</li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <div>
+      <div class="flex justify-center pt-5">
+        <h1><span class="font-bold text-2xl">Planejamentos</span></h1>
+      </div>
+      <div class="p-5">
+        <main class="grid grid-1 border border-red-500 p-3 gap-5">
+          <div class="list">
+            <div
+              class="flex-wrap border bg-[#1E2939] border-gray-300 w-8xl h-50 pl-5 pt-3"
+            >
+              <h1><span class="font-bold">Aniversário do Vitor Roni</span></h1>
+              <p><span class="font-semibold pr-2">Tipo:</span>Aniversário</p>
+              <p><span class="font-semibold pr-2">Local:</span>Avenida brasilia silva (SP)São Paulo</p>
+              <p><span class="font-semibold pr-2">Data:</span>15/03/2026</p>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

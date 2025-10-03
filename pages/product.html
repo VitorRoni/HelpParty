@@ -42,8 +42,7 @@
         <section class="">
           <ul class="flex gap-10">
             <li>Home</li>
-            <li>Planilha</li>
-            <li>Roteiro</li>
+            <li>Planejamentos</li>
             <li>Dicas</li>
             <li>Sobre nós</li>
           </ul>
@@ -66,8 +65,19 @@
             Product page viewer. More information here.Product page viewer. More
             information here.
           </h1>
-          <h2 class="font-bold text-3xl pt-7">R$ 2.000,00</h2>
-          <hr class="w-full mt-7 mb-7 border border-gray-700" />
+          <div class="flex items-center pt-2 justify-between">
+            <span>Fornecedor: Vitor Roni Roni</span>
+            <div class="flex">
+              <figure class="me-2">
+                <img src="../img/local.svg" class="w-7 h-7" />
+              </figure>
+              <span class="text-blue-600 underline"
+                >Avenida brasilha silva -(SP)São Paulo</span
+              >
+            </div>
+          </div>
+          <h2 class="font-bold text-3xl pt-2">R$ 2.000,00</h2>
+          <hr class="w-full mt-3 mb-4 border border-gray-700" />
           <div class="amount flex-wrap items-center gap-2">
             <div class="box flex-wrap w-90 mb-5">
               <label for="modelo">Modelos:</label>
@@ -106,10 +116,10 @@
                 </button>
               </div>
             </div>
-            <div class="flex gap-3 mb-5">
+            <div class="flex gap-3 mb-5 items-center">
               <label for="quantidade">Quantidade:</label>
               <button
-                class="flex align-center justify-center w-10 h-10 text-2xl font-bold border-2 border-gray-500 rounded-sm"
+                class="flex align-center justify-center w-10 h-10 text-2xl font-bold border-1 border-gray-500 rounded-sm"
               >
                 <p>+</p>
               </button>
@@ -117,20 +127,43 @@
                 >1</span
               >
               <button
-                class="flex align-center justify-center w-10 h-10 text-2xl font-bold border-2 border-gray-500 rounded-sm"
+                class="flex align-center justify-center w-10 h-10 text-2xl font-bold border-1 border-gray-500 rounded-sm"
               >
                 -
               </button>
-              <label for="disponivel">99 disponivel</label>
+              <label for="disponivel">99 disponível</label>
             </div>
-            <div class="flex justify-center gap-5">
+            <h6>Descrição:</h6>
+            <div
+              class="description flex-wrap p-4 h-44 overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500"
+            >
+              <p class="border-t border-b rounded-md border-gray-500 p-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium nisi distinctio quos repellendus repudiandae porro,
+                aperiam, eligendi, sit officia maxime amet temporibus corrupti
+                dolore voluptatum eaque accusantium dicta tempore nesciunt.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
+                ipsum maiores, repudiandae perspiciatis ratione dolore magni
+                labore ut, iste voluptas, rerum dolor inventore. Ipsa ab eveniet
+                provident, dignissimos repellat eaque. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Praesentium nisi distinctio
+                quos repellendus repudiandae porro, aperiam, eligendi, sit
+                officia maxime amet temporibus corrupti dolore voluptatum eaque
+                accusantium dicta tempore nesciunt. Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Facere ipsum maiores, repudiandae
+                perspiciatis ratione dolore magni labore ut, iste voluptas,
+                rerum dolor inventore. Ipsa ab eveniet provident, dignissimos
+                repellat eaque.
+              </p>
+            </div>
+            <div class="flex justify-center gap-5 pt-3">
               <button
-                class="border-3 rounded-md bg-[#424769] border-gray-700 p-2 w-1/2"
+                class="rounded-md bg-blue-700 hover:bg-blue-800 shadow-3 p-2 w-1/2"
               >
                 Add ao planejamento
               </button>
               <button
-                class="border-3 rounded-md bg-[#424769] border-gray-700 p-2 w-1/2"
+                class="rounded-md bg-blue-700 hover:bg-blue-800 shadow-3 p-2 w-1/2"
               >
                 Chat
               </button>
