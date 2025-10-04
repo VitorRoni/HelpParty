@@ -9,14 +9,14 @@
   </head>
   <body class="p-0 m-0 bg-[#2d3250] text-white">
     <header class="w-full bg-[#424769]">
-      <div class="mx-0 flex justify-between items-center">
-        <div class="side-left pl-3">
+      <div class="flex items-center justify-between mx-0">
+        <div class="pl-3 side-left">
           <figure>
             <img src="../img/logo.png" alt="Logo" class="logo w-35" />
           </figure>
         </div>
 
-        <div class="search flex justify-center pr-15">
+        <div class="flex justify-center search pr-15">
           <form role="search">
             <input
               type="text"
@@ -31,14 +31,14 @@
         <div class="side-right pr-15">
           <figure class="">
             <img
-              src="../img/profile.png"
+              src="../img/icons/profile.png"
               alt="profile menu"
-              class="profile w-10 h-auto"
+              class="w-10 h-auto profile"
             />
           </figure>
         </div>
       </div>
-      <nav class="nav w-full flex justify-center mx-0">
+      <nav class="flex justify-center w-full mx-0 nav pb-2">
         <section class="">
           <ul class="flex gap-10">
             <li>Home</li>
@@ -49,24 +49,236 @@
         </section>
       </nav>
     </header>
-    <div>
-      <div class="flex justify-center pt-5">
-        <h1><span class="font-bold text-2xl">Planejamentos</span></h1>
-      </div>
-      <div class="p-5">
-        <main class="grid grid-1 border border-red-500 p-3 gap-5">
-          <div class="list">
-            <div
-              class="flex-wrap border bg-[#1E2939] border-gray-300 w-8xl h-50 pl-5 pt-3"
+    <div class="flex-wrap items-center justify-end w-full pt-3">
+      <h1>
+        <span class="flex justify-center text-2xl font-bold"
+        >Meus Planejamentos</span
+        >
+      </h1>
+      <p>
+        <span class="flex justify-center font-mono text-sm text-gray-400"
+        >Organize e acompanhe todos os seus eventos em um só lugar</span
+        >
+      </p>
+    </div>
+    <div class="flex mb-10">
+      <!-- Content Aside -->
+      <aside
+        class="flex flex-wrap bg-[#424769] w-md h-full rounded-lg p-5 ml-5 mt-5"
+      >
+        <div class="flex-wrap  w-full pb-5">
+          <h2><span class="text-xl font-semibold">Meus Eventos</span></h2>
+          <hr class="w-100 border  border-gray-700" />
+        </div>
+
+        <!-- Start of card list  -->
+        <div
+          class="flex h-full bg-[#1E2939] shadow-xl rounded-lg flex-wrap mb-5"
+        >
+          <div class="w-full h-full">
+            <h5
+              class="flex items-center h-10 pl-7 bg-gradient-to-r from-[#845015] via-[#955c1a] via-55% to-[#faa95d] w-full rounded-t-lg"
             >
-              <h1><span class="font-bold">Aniversário do Vitor Roni</span></h1>
-              <p><span class="font-semibold pr-2">Tipo:</span>Aniversário</p>
-              <p><span class="font-semibold pr-2">Local:</span>Avenida brasilia silva (SP)São Paulo</p>
-              <p><span class="font-semibold pr-2">Data:</span>15/03/2026</p>
+              <span class="font-semibold">Aniversário do Vitor Roni</span>
+            </h5>
+
+            <div class="flex-wrap h-full pl-5">
+              <div class="flex items-center gap-2 pt-5">
+                <img src="../img/icons/date.svg" alt="" class="h-6" />
+                <p class="">
+                  <span class="font-semibold text-gray-400">DATA</span>
+                </p>
+              </div>
+              <p class="pl-8 font-mono">
+                <span>12 Dezembro de 2025</span>
+              </p>
+              <div class="flex items-center gap-2 pt-2">
+                <img src="../img/icons/hour.png" alt="" class="h-6" />
+                <p><span class="font-semibold text-gray-400">HORÁRIO</span></p>
+              </div>
+              <p class="pl-8"><span class="font-mono">19:45</span></p>
+              <div class="flex items-center gap-2 pt-2">
+                <img src="../img/icons/local.svg" alt="" class="h-6" />
+                <p><span class="font-semibold text-gray-400">LOCAL</span></p>
+              </div>
+              <p class="pl-8">
+                <span class="font-mono">Avenida brasilia</span>
+              </p>
+              <div class="flex justify-between gap-10 pr-10 mt-5">
+                <span class="w-1/2 font-sans">Tema:</span>
+                <p class="w-1/2 font-semibold">Anos 60 Retro Party</p>
+              </div>
+              <div class="flex justify-between gap-10 pr-10 mt-5">
+                <span class="w-1/2 font-sans">Orçamento:</span>
+                <p class="w-1/2 font-semibold">R$ 550,00</p>
+              </div>
+              <div class="flex justify-center gap-10 pr-5 mt-10 mb-10">
+                <button
+                  class="flex items-center justify-center w-40 h-10 gap-2 bg-blue-700 rounded-lg hover:bg-blue-800 whitespace-nowrap"
+                >
+                  <img src="../img/icons/detail.png" alt="" class="h-8" /> Ver
+                  Detalhes
+                </button>
+                <button
+                  class="flex items-center justify-center w-40 h-10 gap-2 bg-blue-700 rounded-lg hover:bg-blue-800"
+                >
+                  <img src="../img/icons/edit.png" alt="" class="h-6" /> Editar
+                </button>
+              </div>
             </div>
           </div>
-        </main>
+        </div>
+
+        <!-- Second -->
+        <div class="flex h-full bg-[#1E2939] shadow-xl rounded-lg flex-wrap mb-5">
+          <div class="w-full h-full">
+            <h5
+              class="flex items-center h-10 pl-7 bg-gradient-to-r from-[#845015] via-[#955c1a] via-55% to-[#faa95d] w-full rounded-t-lg"
+            >
+              <span class="font-semibold">Aniversário do Vitor Roni</span>
+            </h5>
+
+            <div class="flex-wrap h-full pl-5">
+              <div class="flex items-center gap-2 pt-5">
+                <img src="../img/icons/date.svg" alt="" class="h-6" />
+                <p class="">
+                  <span class="font-semibold text-gray-400">DATA</span>
+                </p>
+              </div>
+              <p class="pl-8 font-mono">
+                <span>12 Dezembro de 2025</span>
+              </p>
+              <div class="flex items-center gap-2 pt-2">
+                <img src="../img/icons/hour.png" alt="" class="h-6" />
+                <p><span class="font-semibold text-gray-400">HORÁRIO</span></p>
+              </div>
+              <p class="pl-8"><span class="font-mono">19:45</span></p>
+              <div class="flex items-center gap-2 pt-2">
+                <img src="../img/icons/local.svg" alt="" class="h-6" />
+                <p><span class="font-semibold text-gray-400">LOCAL</span></p>
+              </div>
+              <p class="pl-8">
+                <span class="font-mono">Avenida brasilia</span>
+              </p>
+              <div class="flex justify-between gap-10 pr-10 mt-5">
+                <span class="w-1/2 font-sans">Tema:</span>
+                <p class="w-1/2 font-semibold">Anos 60 Retro Party</p>
+              </div>
+              <div class="flex justify-between gap-10 pr-10 mt-5">
+                <span class="w-1/2 font-sans">Orçamento:</span>
+                <p class="w-1/2 font-semibold">R$ 550,00</p>
+              </div>
+              <div class="flex justify-center gap-10 pr-5 mt-10 mb-10">
+                <button
+                  class="flex items-center justify-center w-40 h-10 gap-2 bg-blue-700 rounded-lg hover:bg-blue-800 whitespace-nowrap"
+                >
+                  <img src="../img/icons/detail.png" alt="" class="h-8" /> Ver
+                  Detalhes
+                </button>
+                <button
+                  class="flex items-center justify-center w-40 h-10 gap-2 bg-blue-700 rounded-lg hover:bg-blue-800"
+                >
+                  <img src="../img/icons/edit.png" alt="" class="h-6" /> Editar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- third -->
+
+        <div class="flex h-full bg-[#1E2939] shadow-xl rounded-lg flex-wrap mb-5">
+          <div class="w-full h-full">
+            <h5
+              class="flex items-center h-10 pl-7 bg-gradient-to-r from-[#845015] via-[#955c1a] via-55% to-[#faa95d] w-full rounded-t-lg"
+            >
+              <span class="font-semibold">Aniversário do Vitor Roni</span>
+            </h5>
+
+            <div class="flex-wrap h-full pl-5">
+              <div class="flex items-center gap-2 pt-5">
+                <img src="../img/icons/date.svg" alt="" class="h-6" />
+                <p class="">
+                  <span class="font-semibold text-gray-400">DATA</span>
+                </p>
+              </div>
+              <p class="pl-8 font-mono">
+                <span>12 Dezembro de 2025</span>
+              </p>
+              <div class="flex items-center gap-2 pt-2">
+                <img src="../img/icons/hour.png" alt="" class="h-6" />
+                <p><span class="font-semibold text-gray-400">HORÁRIO</span></p>
+              </div>
+              <p class="pl-8"><span class="font-mono">19:45</span></p>
+              <div class="flex items-center gap-2 pt-2">
+                <img src="../img/icons/local.svg" alt="" class="h-6" />
+                <p><span class="font-semibold text-gray-400">LOCAL</span></p>
+              </div>
+              <p class="pl-8">
+                <span class="font-mono">Avenida brasilia</span>
+              </p>
+              <div class="flex justify-between gap-10 pr-10 mt-5">
+                <span class="w-1/2 font-sans">Tema:</span>
+                <p class="w-1/2 font-semibold">Anos 60 Retro Party</p>
+              </div>
+              <div class="flex justify-between gap-10 pr-10 mt-5">
+                <span class="w-1/2 font-sans">Orçamento:</span>
+                <p class="w-1/2 font-semibold">R$ 550,00</p>
+              </div>
+              <div class="flex justify-center gap-10 pr-5 mt-10 mb-10">
+                <button
+                  class="flex items-center justify-center w-40 h-10 gap-2 bg-blue-700 rounded-lg hover:bg-blue-800 whitespace-nowrap"
+                >
+                  <img src="../img/icons/detail.png" alt="" class="h-8" /> Ver
+                  Detalhes
+                </button>
+                <button
+                  class="flex items-center justify-center w-40 h-10 gap-2 bg-blue-700 rounded-lg hover:bg-blue-800"
+                >
+                  <img src="../img/icons/edit.png" alt="" class="h-6" /> Editar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+        <div class="content bg-[#424769] rounded-lg ml-5 w-5xl mt-5">
+          <div class="title flex-wrap pl-10 pt-5">
+            <h1><span class="font-semibold text-xl"> Planilha da festa: Aniversário do Vitor Roni</span></h1>
+            <div class="flex">
+            <hr class="w-235 border  border-gray-700" />
+            </div>
+          </div>
+          <div class="flex justify-around pt-10 ">
+            <div>
+            <p><span class="font-sans">Tema da festa</span></p>
+            <p><span class="font-semibold">Anos 60 Retro Party</span></p>
+            </div>
+            <div>
+            <p><span class="font-sans">Data</span></p>
+            <p><span class="font-semibold">12 Dezembro de 2025</span></p>
+            </div>
+            <div>
+            <p><span class="font-sans">Hora</span></p>
+            <p><span class="font-semibold">19:45</span></p>
+            </div>
+            <div>
+            <p><span class="font-sans">Local</span></p>
+            <p><span class="font-semibold">Avenida brasilia</span></p>
+            </div>
+          </div>
+        <div class="flex justify-center pt-10">
+          <div class="flex w-lg just bg-[#d4b97a] rounded-sm gap-3 h-7 items-center">
+            <img src="../img/icons/alert.png" alt="" class=" pl-2 h-5">
+            <p class="text-black"><span class="font-bold">Orçamento inicial:</span> R$ 550 |<span class="font-bold"> Orçamento restante:</span> R$ -225,00</p>
+          </div>
+        </div>
+
+        <div class="table">
+          
+        </div>
       </div>
     </div>
+
   </body>
 </html>

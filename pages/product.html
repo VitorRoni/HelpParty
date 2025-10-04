@@ -9,14 +9,14 @@
   </head>
   <body class="p-0 m-0 bg-[#2d3250] text-white">
     <header class="w-full bg-[#424769]">
-      <div class="mx-0 flex justify-between items-center">
-        <div class="side-left pl-3">
+      <div class="flex items-center justify-between mx-0">
+        <div class="pl-3 side-left">
           <figure>
             <img src="../img/logo.png" alt="Logo" class="logo w-35" />
           </figure>
         </div>
 
-        <div class="search flex justify-center pr-15">
+        <div class="flex justify-center search pr-15">
           <form role="search">
             <input
               type="text"
@@ -31,14 +31,14 @@
         <div class="side-right pr-15">
           <figure class="">
             <img
-              src="../img/profile.png"
+              src="../img/icons/profile.png"
               alt="profile menu"
-              class="profile w-10 h-auto"
+              class="w-10 h-auto profile"
             />
           </figure>
         </div>
       </div>
-      <nav class="nav w-full flex justify-center mx-0">
+      <nav class="flex justify-center w-full mx-0 nav pb-2">
         <section class="">
           <ul class="flex gap-10">
             <li>Home</li>
@@ -50,39 +50,39 @@
       </nav>
     </header>
 
-    <div class="container mx-auto w-full flex justify-center mt-5">
+    <div class="container flex justify-center w-full mx-auto mt-5">
       <section class="flex w-360 h-160 bg-[#1E2939] rounded-lg shadow-sm p-2">
         <div
-          class="image flex justify-center align-center w-180 h-150 border border-gray-700 flex-shrink-0"
+          class="flex justify-center flex-shrink-0 border border-gray-700 image align-center w-180 h-150"
         >
           <figure class="flex">
             <img class="object-fit" src="../img/logo.svg" />
           </figure>
         </div>
 
-        <div class="information flex-wrap pl-7 pr-7">
-          <h1 class="font-bold text-2xl">
+        <div class="flex-wrap information pl-7 pr-7">
+          <h1 class="text-2xl font-bold">
             Product page viewer. More information here.Product page viewer. More
             information here.
           </h1>
-          <div class="flex items-center pt-2 justify-between">
+          <div class="flex items-center justify-between pt-2">
             <span>Fornecedor: Vitor Roni Roni</span>
             <div class="flex">
               <figure class="me-2">
-                <img src="../img/local.svg" class="w-7 h-7" />
+                <img src="../img/icons/local.svg" class="w-7 h-7" />
               </figure>
               <span class="text-blue-600 underline"
-                >Avenida brasilha silva -(SP)São Paulo</span
+                >Avenida brasilia silva -(SP)São Paulo</span
               >
             </div>
           </div>
-          <h2 class="font-bold text-3xl pt-2">R$ 2.000,00</h2>
+          <h2 class="pt-2 text-3xl font-bold">R$ 2.000,00</h2>
           <hr class="w-full mt-3 mb-4 border border-gray-700" />
-          <div class="amount flex-wrap items-center gap-2">
-            <div class="box flex-wrap w-90 mb-5">
+          <div class="flex-wrap items-center gap-2 amount">
+            <div class="flex-wrap mb-5 box w-90">
               <label for="modelo">Modelos:</label>
               <div
-                class="w-162 border border-gray-700 p-1 grid grid-cols-3 gap-1 rounded-md"
+                class="grid grid-cols-3 gap-1 p-1 border border-gray-700 rounded-md w-162"
               >
                 <button
                   class="border-2 bg-[#424769] border-gray-700 rounded-md"
@@ -116,18 +116,18 @@
                 </button>
               </div>
             </div>
-            <div class="flex gap-3 mb-5 items-center">
+            <div class="flex items-center gap-3 mb-5">
               <label for="quantidade">Quantidade:</label>
               <button
-                class="flex align-center justify-center w-10 h-10 text-2xl font-bold border-1 border-gray-500 rounded-sm"
+                class="flex justify-center w-10 h-10 text-2xl font-bold border-gray-500 rounded-sm align-center border-1"
               >
                 <p>+</p>
               </button>
-              <span id="qtd" class="flex w-10 h-10 items-center justify-center"
+              <span id="qtd" class="flex items-center justify-center w-10 h-10"
                 >1</span
               >
               <button
-                class="flex align-center justify-center w-10 h-10 text-2xl font-bold border-1 border-gray-500 rounded-sm"
+                class="flex justify-center w-10 h-10 text-2xl font-bold border-gray-500 rounded-sm align-center border-1"
               >
                 -
               </button>
@@ -137,7 +137,7 @@
             <div
               class="description flex-wrap p-4 h-44 overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500"
             >
-              <p class="border-t border-b rounded-md border-gray-500 p-1">
+              <p class="p-1 border-t border-b border-gray-500 rounded-md">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Praesentium nisi distinctio quos repellendus repudiandae porro,
                 aperiam, eligendi, sit officia maxime amet temporibus corrupti
@@ -158,12 +158,12 @@
             </div>
             <div class="flex justify-center gap-5 pt-3">
               <button
-                class="rounded-md bg-blue-700 hover:bg-blue-800 shadow-3 p-2 w-1/2"
+                class="w-1/2 p-2 bg-blue-700 rounded-md hover:bg-blue-800 shadow-3"
               >
                 Add ao planejamento
               </button>
               <button
-                class="rounded-md bg-blue-700 hover:bg-blue-800 shadow-3 p-2 w-1/2"
+                class="w-1/2 p-2 bg-blue-700 rounded-md hover:bg-blue-800 shadow-3"
               >
                 Chat
               </button>
